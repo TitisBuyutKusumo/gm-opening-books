@@ -33,6 +33,11 @@ Standard polyglot `.bin` — anything that reads polyglot books works: Komodo, R
 
 So your engine opens like watching Magnus or Hikaru play: Ruy Lopez + Berlin + Catalan + Sveshnikov à la Magnus, or 1.e4 mixed with 1.b3 and the Bongcloud à la Hikaru (yes, Ke2 made the book). Fun vs humans. For engine-vs-engine tournaments it adds no Elo — that's not how books work.
 
+## Proof: books don't make engines stronger
+
+1000-game match, Stockfish 19 at fixed depth 6, book vs the same engine without a book:
+book scored 47.3% (magnus) and 47.5% (hikaru) — no Elo gain. Full chart: [match-1000games.pdf](match-1000games.pdf).
+
 ## License
 
 MIT — do whatever you want with it. See LICENSE.
