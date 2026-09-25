@@ -35,8 +35,11 @@ So your engine opens like watching Magnus or Hikaru play: Ruy Lopez + Berlin + C
 
 ## Proof: books don't make engines stronger
 
-1000-game match, Stockfish 19 at fixed depth 6, book vs the same engine without a book:
-book scored 47.3% (magnus) and 47.5% (hikaru) — no Elo gain. Full chart: [match-1000games.pdf](match-1000games.pdf).
+1000 games each, Stockfish 19 at fixed depth 6, book vs no book — 47.3% (magnus), 47.5% (hikaru).
+
+![1000-game match results](match-chart.png)
+
+Full page: [match-1000games.pdf](match-1000games.pdf).
 
 ## License
 
