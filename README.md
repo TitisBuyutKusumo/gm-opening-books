@@ -1,5 +1,8 @@
 # GM Opening Books
 
+[![Stars](https://img.shields.io/github/stars/TitisBuyutKusumo/gm-opening-books?style=social)](https://github.com/TitisBuyutKusumo/gm-opening-books/stargazers) [![License](https://img.shields.io/github/license/TitisBuyutKusumo/gm-opening-books)](LICENSE)
+
+
 Polyglot chess opening books built from real super-GM games. Point your engine at one and it opens like them.
 
 - **magnus.bin** (7 MB, 444,067 positions) — Magnus Carlsen
