@@ -48,6 +48,15 @@ every game a different fight — and yes, the Bongcloud is in there (0.3%, about
 Head-to-head both score the same (47.3% vs 47.5% over 1000 games each), so the
 choice is purely about flavor, not strength.
 
+## Random first move variants
+
+Tired of 1.e4 every game? The `-random` twins keep the full GM repertoire but
+flatten White's first move to 12 equal options (e4 d4 c4 Nf3 Nc3 e3 d3 g3 b3 f4
+c3 b4) — the engine truly picks at random, verified: all 12 appear, junk first
+moves (Na3, h4, ...) removed.
+
+- **magnus-random.bin** (7 MB) · **hikaru-random.bin** (45 MB) · **hikarulite-random.bin** (7 MB)
+
 ## How to use
 
 Standard polyglot `.bin` — anything that reads polyglot books works: Komodo, Rodent, Arena, Banksia Gui, CuteChess, Scid vs. PC, Lucas Chess, DroidFish on Android (copy into the `DroidFish/book` folder), or Stockfish via the PolyGlot adapter. Outside the book, your engine thinks on its own as usual.
