@@ -25,6 +25,24 @@ Per position: what the GM played, how many times. Weight = frequency — the mor
 
 Not an error. Three reasons: Magnus plays far less online (9k vs 68k games), his repertoire is narrow (main-line 1.e4/1.d4 with heavy transpositional overlap into the same positions), and the 60-ply cap trims middlegame tails. Small means dense, not broken.
 
+## Playing style
+
+**magnus.bin — the model student.** White plays 1.e4 (49%) and 1.d4 (32%),
+nothing exotic. Against 1.e4: Sicilian (37%) and 1...e5 (25%). Against 1.d4:
+1...Nf6 (55%) and 1...d5 (27%). Expect Ruy Lopez, Berlin, Catalan, Sveshnikov —
+sound main lines, no surprises. (There are a few bullet jokes buried deep in the
+file, like 1.Na3, but you will basically never see them.) Pick this one for
+solid openings, engine tournaments, or studying correct theory.
+
+**hikaru.bin — the menace.** White mixes 1.e4 (43%) and 1.d4 (23%) with 1.b3
+Larsen (13%). As Black he answers 1.e4 with 1...e5 and the Modern 1...g6 (21%),
+and meets 1.d4 with 1...Nf6 or the Modern 1...g6 (34%). Weird from move 2,
+every game a different fight — and yes, the Bongcloud is in there (0.3%, about
+1 in 300 games). Pick this one for bullet against humans and maximum chaos.
+
+Head-to-head both score the same (47.3% vs 47.5% over 1000 games each), so the
+choice is purely about flavor, not strength.
+
 ## How to use
 
 Standard polyglot `.bin` — anything that reads polyglot books works: Komodo, Rodent, Arena, Banksia Gui, CuteChess, Scid vs. PC, Lucas Chess, DroidFish on Android (copy into the `DroidFish/book` folder), or Stockfish via the PolyGlot adapter. Outside the book, your engine thinks on its own as usual.
