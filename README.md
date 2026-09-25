@@ -6,6 +6,11 @@
 Polyglot chess opening books built from real super-GM games. Point your engine at one and it opens like them.
 
 - **magnus.bin** (7 MB, 444,067 positions) — Magnus Carlsen
+**hikarulite.bin** (7 MB, 443,154 positions) — Hikaru Nakamura, phone-sized.
+Same repertoire as hikaru.bin, slimmed down with simple math: every position
+Hikaru played at least twice is kept, plus a deterministic 11.4% slice of the
+one-off positions (`key % 100000 < 11432`), landing at the same size as
+magnus.bin. Use this one on Android (DroidFish) or anywhere 45 MB is too heavy.
 - **hikaru.bin** (45 MB, 2,916,754 positions) — Hikaru Nakamura
 
 ## Where the data comes from
