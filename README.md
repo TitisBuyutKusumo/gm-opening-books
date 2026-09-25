@@ -2,34 +2,34 @@
 
 Polyglot chess opening books built from real super-GM games. Point your engine at one and it opens like them.
 
-- **magnus.bin** (7 MB, 444.067 posisi) — Magnus Carlsen
-- **hikaru.bin** (45 MB, 2.916.754 posisi) — Hikaru Nakamura
+- **magnus.bin** (7 MB, 444,067 positions) — Magnus Carlsen
+- **hikaru.bin** (45 MB, 2,916,754 positions) — Hikaru Nakamura
 
-## Datanya dari mana
+## Where the data comes from
 
-Semua game diambil dari chess.com published API (`api.chess.com/pub/player/.../games/...`), bulan per bulan sampai September 2026:
+Every game pulled from the chess.com published API (`api.chess.com/pub/player/.../games/...`), month by month through September 2026:
 
-- Magnus: 9.454 game standar (Des 2014 – Sep 2026). Sisanya varian/chess960 dibuang.
-- Hikaru: 68.349 game standar (Jan 2014 – Sep 2026). Dia main ~7x lebih banyak dari Magnus, makanya file-nya gede.
+- Magnus: 9,454 standard games (Dec 2014 – Sep 2026). Variants and chess960 excluded.
+- Hikaru: 68,349 standard games (Jan 2014 – Sep 2026). He plays roughly 7x more than Magnus, hence the bigger file.
 
-Semua kontrol waktu masuk (rapid, blitz, bullet). Rating lawan ga difilter — ini repertoire apa adanya, bukan kurasi "cuma lawan kuat".
+All time controls included (rapid, blitz, bullet). No opponent-rating filter — this is the raw repertoire, not a curated "strong opponents only" cut.
 
-## Cara bikinnya
+## How it was built
 
-Per posisi dicatat: Magnus/Hikaru main apa, berapa kali. Bobot = frekuensi — makin sering dimainin, makin sering kepilih engine. Standard chess doang, max 60 ply (opening + awal middlegame), rokade encoding KxR standar, file sorted biar binary-search aman.
+Per position: what the GM played, how many times. Weight = frequency — the more they played it, the more often the engine picks it. Standard chess only, capped at 60 plies (opening + early middlegame), standard KxR castling encoding, sorted file for safe binary search.
 
-## Kok magnus.bin kecil?
+## Why is magnus.bin so small?
 
-Bukan error. Tiga sebab: Magnus main jauh lebih dikit (9 ribu vs 68 ribu game), repertoire dia sempit (e4/d4 jalur utama, transposisi numpuk di posisi yang sama), dan max-ply 60 motong ekor middlegame. Kecil = padat, bukan rusak.
+Not an error. Three reasons: Magnus plays far less online (9k vs 68k games), his repertoire is narrow (main-line 1.e4/1.d4 with heavy transpositional overlap into the same positions), and the 60-ply cap trims middlegame tails. Small means dense, not broken.
 
-## Cara pakai
+## How to use
 
-File `.bin` polyglot standar — engine atau GUI apa aja yang baca polyglot bisa pakai: Komodo, Rodent, Arena, Banksia, CuteChess, DroidFish (copy ke folder `DroidFish/book`), atau Stockfish via PolyGlot adapter. Di luar book, engine mikir sendiri kayak biasa.
+Standard polyglot `.bin` — anything that reads polyglot books works: Komodo, Rodent, Arena, Banksia Gui, CuteChess, Scid vs. PC, Lucas Chess, DroidFish on Android (copy into the `DroidFish/book` folder), or Stockfish via the PolyGlot adapter. Outside the book, your engine thinks on its own as usual.
 
-## Buat apa
+## What it's for
 
-Biar engine bukaannya berasa kayak nonton Magnus/Hikaru main: Ruy Lopez + Berlin + Catalan + Sveshnikov ala Magnus, atau 1.e4 campur 1.b3 + Bongcloud ala Hikaru (iya, Ke2-nya masuk book). Buat seru-seruan lawan manusia. Buat turnamen engine-vs-engine ga nambah Elo — book ga gitu cara kerjanya.
+So your engine opens like watching Magnus or Hikaru play: Ruy Lopez + Berlin + Catalan + Sveshnikov à la Magnus, or 1.e4 mixed with 1.b3 and the Bongcloud à la Hikaru (yes, Ke2 made the book). Fun vs humans. For engine-vs-engine tournaments it adds no Elo — that's not how books work.
 
 ## License
 
-MIT — bebas dipakai. Lihat LICENSE.
+MIT — do whatever you want with it. See LICENSE.
