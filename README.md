@@ -57,6 +57,11 @@ moves (Na3, h4, ...) removed.
 
 - **magnus-random.bin** (7 MB) · **hikaru-random.bin** (45 MB) · **hikarulite-random.bin** (7 MB)
 
+**gotham.bin** (24 MB, 1,491,519 positions) — Levy Rozman (GothamChess).
+33,913 standard games (Mar 2017 – Sep 2026). White plays 1.e4 (36%) and 1.d4
+(32%) with a dash of Larsen 1.b3 (8%) — peak Guess-the-Elo chaos energy.
+Biggest file here after hikaru, because Levy simply plays everything.
+
 ## How to use
 
 Standard polyglot `.bin` — anything that reads polyglot books works: Komodo, Rodent, Arena, Banksia Gui, CuteChess, Scid vs. PC, Lucas Chess, DroidFish on Android (copy into the `DroidFish/book` folder), or Stockfish via the PolyGlot adapter. Outside the book, your engine thinks on its own as usual.
