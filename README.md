@@ -49,6 +49,13 @@ and meets 1.d4 with 1...Nf6 or the Modern 1...g6 (34%). Weird from move 2,
 every game a different fight — and yes, the Bongcloud is in there (0.3%, about
 1 in 300 games). Pick this one for bullet against humans and maximum chaos.
 
+**gotham.bin — the content creator.** White is pragmatic: 1.e4 (36%), 1.d4
+(32%), dash of Larsen 1.b3 (8%). As Black he has no main answer to 1.e4 —
+Caro-Kann (23%), French (19%), Sicilian (15%), 1...e5 (13%), Scandinavian
+(12%) all show up. Against 1.d4: 1...Nf6 (34%), 1...d5 (25%), Modern (10%),
+Dutch (5%). Every game a different opening, so viewers never get bored.
+Pick this one for maximum variety against humans.
+
 Head-to-head both score the same (47.3% vs 47.5% over 1000 games each), so the
 choice is purely about flavor, not strength.
 
