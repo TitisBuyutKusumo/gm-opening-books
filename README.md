@@ -30,6 +30,10 @@ Per position: what the GM played, how many times. Weight = frequency — the mor
 
 Not an error. Three reasons: Magnus plays far less online (9k vs 68k games), his repertoire is narrow (main-line 1.e4/1.d4 with heavy transpositional overlap into the same positions), and the 60-ply cap trims middlegame tails. Small means dense, not broken.
 
+**gothamlite.bin** (7 MB, 446,566 positions) — GothamChess, phone-sized.
+Same math as hikarulite: everything Levy played twice, plus a deterministic
+slice of the one-offs.
+
 ## Playing style
 
 **magnus.bin — the model student.** White plays 1.e4 (49%) and 1.d4 (32%),
@@ -55,7 +59,7 @@ flatten White's first move to 12 equal options (e4 d4 c4 Nf3 Nc3 e3 d3 g3 b3 f4
 c3 b4) — the engine truly picks at random, verified: all 12 appear, junk first
 moves (Na3, h4, ...) removed.
 
-- **magnus-random.bin** (7 MB) · **hikaru-random.bin** (45 MB) · **hikarulite-random.bin** (7 MB)
+- **magnus-random.bin** (7 MB) · **hikaru-random.bin** (45 MB) · **hikarulite-random.bin** (7 MB) · **gotham-random.bin** (24 MB) · **gothamlite-random.bin** (7 MB)
 
 **gotham.bin** (24 MB, 1,491,519 positions) — Levy Rozman (GothamChess).
 33,913 standard games (Mar 2017 – Sep 2026). White plays 1.e4 (36%) and 1.d4
