@@ -60,6 +60,11 @@ Pick this one for maximum variety against humans.
 Head-to-head both score the same (47.3% vs 47.5% over 1000 games each), so the
 choice is purely about flavor, not strength.
 
+**witty.bin — the alien.** White goes 1.e4 (60%), pure aggression: Englund
+Gambit hundreds of times, Smith-Morra, Modern, and the Alien Gambit sacs
+(Ng5xf7 appears in 4,679 positions — Stockfish agrees it's best 2 out of 3
+times sampled). Pick this one for maximum chaos and brilliant-hunting.
+
 ## Random first move variants
 
 Tired of 1.e4 every game? The `-random` twins keep the full GM repertoire but
@@ -67,12 +72,18 @@ flatten White's first move to 12 equal options (e4 d4 c4 Nf3 Nc3 e3 d3 g3 b3 f4
 c3 b4) — the engine truly picks at random, verified: all 12 appear, junk first
 moves (Na3, h4, ...) removed.
 
-- **magnus-random.bin** (7 MB) · **hikaru-random.bin** (45 MB) · **hikarulite-random.bin** (7 MB) · **gotham-random.bin** (24 MB) · **gothamlite-random.bin** (7 MB)
+- **magnus-random.bin** (7 MB) · **hikaru-random.bin** (45 MB) · **hikarulite-random.bin** (7 MB) · **gotham-random.bin** (24 MB) · **gothamlite-random.bin** (7 MB) · **witty-random.bin** (94 MB)
 
 **gotham.bin** (24 MB, 1,491,519 positions) — Levy Rozman (GothamChess).
 33,913 standard games (Mar 2017 – Sep 2026). White plays 1.e4 (36%) and 1.d4
 (32%) with a dash of Larsen 1.b3 (8%) — peak Guess-the-Elo chaos energy.
 Biggest file here after hikaru, because Levy simply plays everything.
+
+**witty.bin** (94 MB, 5,870,377 positions) — CM Volen Dyulgerov (witty_alien).
+165,718 standard games, the biggest book here. Ex-software-engineer turned
+TikTok/Twitch streamer, inventor of the Alien Gambit (Ng5→Nxf7 chaos, 2,494
+games and counting). Short wins count double, so the book is full of mating
+attacks, not just repertoire.
 
 ## How to use
 
@@ -93,4 +104,5 @@ Full page: [match-1000games.pdf](match-1000games.pdf).
 ## License
 
 MIT — do whatever you want with it. See LICENSE.
+
 
