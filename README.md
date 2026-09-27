@@ -32,7 +32,8 @@ Not an error. Three reasons: Magnus plays far less online (9k vs 68k games), his
 
 **gothamlite.bin** (7 MB, 446,566 positions) — GothamChess, phone-sized.
 Same math as hikarulite: everything Levy played twice, plus a deterministic
-slice of the one-offs.
+slice of the one-offs (`key % 100000 < 27437`). The threshold is per-player,
+tuned so each lite lands at ~7MB — not a universal constant.
 
 ## Playing style
 
@@ -92,3 +93,4 @@ Full page: [match-1000games.pdf](match-1000games.pdf).
 ## License
 
 MIT — do whatever you want with it. See LICENSE.
+
