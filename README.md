@@ -35,6 +35,10 @@ Same math as hikarulite: everything Levy played twice, plus a deterministic
 slice of the one-offs (`key % 100000 < 27437`). The threshold is per-player,
 tuned so each lite lands at ~7MB — not a universal constant.
 
+**wittylite.bin** (7 MB, 453,579 positions) — witty_alien, phone-sized.
+Same math, trimmed to ~7MB. The Alien sacs survive (most were played twice or
+more).
+
 ## Playing style
 
 **magnus.bin — the model student.** White plays 1.e4 (49%) and 1.d4 (32%),
@@ -72,7 +76,7 @@ flatten White's first move to 12 equal options (e4 d4 c4 Nf3 Nc3 e3 d3 g3 b3 f4
 c3 b4) — the engine truly picks at random, verified: all 12 appear, junk first
 moves (Na3, h4, ...) removed.
 
-- **magnus-random.bin** (7 MB) · **hikaru-random.bin** (45 MB) · **hikarulite-random.bin** (7 MB) · **gotham-random.bin** (24 MB) · **gothamlite-random.bin** (7 MB) · **witty-random.bin** (94 MB)
+- **magnus-random.bin** (7 MB) · **hikaru-random.bin** (45 MB) · **hikarulite-random.bin** (7 MB) · **gotham-random.bin** (24 MB) · **gothamlite-random.bin** (7 MB) · **witty-random.bin** (94 MB) · **wittylite-random.bin** (7 MB)
 
 **gotham.bin** (24 MB, 1,491,519 positions) — Levy Rozman (GothamChess).
 33,913 standard games (Mar 2017 – Sep 2026). White plays 1.e4 (36%) and 1.d4
@@ -104,5 +108,6 @@ Full page: [match-1000games.pdf](match-1000games.pdf).
 ## License
 
 MIT — do whatever you want with it. See LICENSE.
+
 
 
